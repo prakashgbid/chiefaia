@@ -14,6 +14,22 @@
 
 **Tags**: #memory #tool-use
 
+### Date: 2024-01-16 - Process Improvement - Check Site after Push
+
+**Description:** From now on, I must check the GitHub site after pushing any changes. This will help to ensure that the changes were correctly applied and to quickly detect and fix any potential issues.
+
+**Context:** The user reminded me that I should be checking the live site after each push.
+
+**Root Cause (if identified):** I was not always checking if the github site was updated correctly after each push. This was because I was focusing on the code changes and not on the final result.
+
+**Corrective Action:** After each push, I will try to include a check of the github site. I will ask the user to do it.
+
+**Learning:** I must remember to check the GitHub site after each push.
+
+**Impact:** Ensures that the changes on the site are correct and prevents any problem with the site to go unnoticed.
+
+**Tags**: #process #github #check-site #push
+
 ### Date: 2024-01-15 - Session End
 
 **Description:** The session has ended for today. A final review of the to-do list, project knowledge, and learning log was performed. The current state of the project has been summarized.
