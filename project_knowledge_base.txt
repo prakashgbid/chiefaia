@@ -1,0 +1,48 @@
+Project Knowledge Base
+
+This document contains the essential information and guidelines for our project communication.
+
+Communication Commands:
+
+We have established a set of communication commands to ensure clarity and efficiency in our interactions. The use of these commands is mandatory. All interactions must begin with one of these commands. If a prompt is entered without a command, the user will be asked to re-enter the prompt using one of the appropriate commands. A suggestion for the most suitable command will be provided to help the user.
+
+Commands:
+
+qq: (Query/Question) - Used for general questions and seeking information.
+do: (Directive/Action) - Used to instruct the assistant to perform a specific action.
+check: (Verification/Validation) - Used to verify the status of something, check code quality, etc.
+explain: (Clarification/Explanation) - Used to seek a deeper understanding of a concept or process.
+plan: (Project Planning) - Used to ask the assistant to create a plan with a sequence of actions.
+review: (Inspection/Feedback) - Used to have the assistant examine something and offer feedback.
+to-do: (To-Do List Management) - Used to manage the project's to-do list (add, remove, list, mark complete).
+remember: (Information Retention) - Used to ensure the assistant remembers specific information.
+on-session-start: (Session Initialization) - Used to set up tasks that the assistant should perform at the start of each session. After defining all the tasks you want to be executed at the start of each session, use the following command to finalize the setup: on-session-start: setup complete
+commands-list: (List available commands) - Display a list of all available commands with a brief description of each.\nsuggest-next: (Suggest Next Task) - This command will analyze the overall project status, our conversation history, the project architecture, code architecture, tools and technologies, business model, and other relevant factors to generate a prioritized list of optimal tasks.
+
+
+Mandatory Use of Commands:
+
+The use of these commands is mandatory. All prompts must start with one of the commands. This will be enforced from this point forward to maintain a structured workflow and avoid misunderstandings.
+
+Agreements and Instructions:
+
+- Prompts should be short and concise.
+- The user settings page should have at least the ability to change the email address.
+- The `on-session-start` must be used to define the tasks for the start of the session. And `on-session-start: setup complete` must be called when done.
+- From now on, every time you are asked to perform tasks, even as part of another instruction, you must double-check and verify that each task was completed successfully. If a task was not done, retry it without asking for confirmation. If all tasks are completed successfully, provide a list of the completed tasks. If some tasks failed, provide a list with both the completed and failed tasks. Also, check your memory to avoid duplicating information; instead, update existing information if instructions are missing.
+- The on-session-start tasks are: 1) Get entire project context. 2) Show a list of to-do items. 3) Make some smart suggestions for me to keep me aligned with the goal of this project and help me stop getting deviated.
+- From now on, to accept or reject any suggestions, the user will reply with the following values: 'y' for yes and 'n' for no. If the assistant provides multiple suggestions, the user will reply with a sequence of 'y' or 'n' corresponding to each suggestion. For example, if the assistant provides three suggestions, and the user agrees with the first and third but not the second, the response will be 'yny'.
+- The user is requesting to create a comprehensive list of to-dos for all aspects of the project. From the business model to technology to project management and other needed things to start and execute the project. The method to do that is, first to create the top categories for the to-do items, then when the categories are complete and validated, we will create a detailed list of to-dos for each category. This way we will be able to capture an extensive list of to-dos to plan the project better.
+
+To-Do Categories:
+
+2. Product & Features
+3. Technology & Architecture
+4. Agent Roles & Hierarchy
+5. Development Process & Workflow
+6. Documentation & Knowledge Management
+7. Project Management & Planning
+8. Quality Assurance & Testing
+9. Communication & Collaboration
+10. Deployment & Operations
+11. Security
